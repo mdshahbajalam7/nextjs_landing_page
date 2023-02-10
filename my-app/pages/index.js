@@ -20,7 +20,7 @@ const DUMMAY_MEET = [
 ];
 
 export default function Home() {
-  const [lodermeetup, setlodermeetup] = useState([]);
+  const [lodermeetup, setlodermeetup] = useState(["hello"]);
   useEffect(() => {}, []);
   return (
     <div>

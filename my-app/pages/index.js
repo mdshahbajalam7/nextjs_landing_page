@@ -20,11 +20,14 @@ const DUMMAY_MEET = [
 ];
 
 export default function Home() {
-  const [lodermeetup, setlodermeetup] = useState(["hello"]);
-  useEffect(() => {}, []);
+  const [loderdmeetsup, setloderdmeetsup] = useState([]);
+  useEffect(() => {
+    // send http request to fecth data
+    setloderdmeetsup(DUMMAY_MEET)
+  }, []);
   return (
     <div>
-      <MeetupList meetups={DUMMAY_MEET} />
+      <MeetupList meetups={loderdmeetsup} />
     </div>
   );
 }

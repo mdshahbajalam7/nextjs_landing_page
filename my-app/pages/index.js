@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+// import Login from "../components/chakra/Login";
 import MeetupList from "../components/meetups/MeetupList";
 const DUMMAY_MEET = [
   {
@@ -23,11 +24,12 @@ export default function Home() {
   const [loderdmeetsup, setloderdmeetsup] = useState([]);
   useEffect(() => {
     // send http request to fecth data
-    setloderdmeetsup(DUMMAY_MEET)
+    setloderdmeetsup(DUMMAY_MEET);
   }, []);
   return (
     <div>
       <MeetupList meetups={loderdmeetsup} />
+      {/* <Login/> */}
     </div>
   );
 }
